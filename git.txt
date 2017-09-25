@@ -5,7 +5,7 @@
  git commit -m  "descripcion del cambio" con esto se guarda por completo los cambios.
  git log es para ver los ultimos commit hechos
  git show HEAD muestra el commit y sus cambios
- git checkout HEAD nombreArchivo restaura el archivo exactamente antes de hacer el ultimo commit
+ git checkout HEAD nombreArchivo restaura el archivo exactamente antes de que se le haga commit revierte el add
  
  git reset HEAD nombreArchivo con eso puedes hacer que el add que hiciste no se haga
  git rm nombreArchivo para que se elimine del repositorio
