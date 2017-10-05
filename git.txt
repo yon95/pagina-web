@@ -13,19 +13,25 @@
 entre nuestro directorio de trabajo y el último commit, ignorando el staging area
 
  git commit -m  "descripcion del cambio" con esto se guarda por completo los cambios.
+ git commit –a – agrega automáticamente en el staging area los cambios
 
  git log es para ver los ultimos commit hechos
+de archivos que están en seguimiento Si te parece que correr el
 
  git show HEAD muestra el commit y sus cambios
+comando git add cada vez que modificas un archivo es demasiado engorroso,
 
- git checkout HEAD nombreArchivo restaura el archivo exactamente antes de que se le haga commit revierte el add
+ git checkout HEAD nombreArchivo restaura el archivo exactamente antes de que se le haga commit 
+revierte el add
+Git te permite saltar esta parte con la opción -a. Esto le dice a Git, que ejecute
 
  
 
  git reset HEAD nombreArchivo con eso puedes hacer que el add que hiciste no se haga
+el git add en cualquier archivo que ya esta en “seguimiento” - es decir, cualquier
 
  git rm nombreArchivo para que se elimine del repositorio
-
+archivo que se encontraba en tu último commit y después fue modificado.
  git reset --soft HEAD-1 ellimina el ultimo commit 
 
  git push para subir a a github
