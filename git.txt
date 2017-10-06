@@ -30,8 +30,12 @@ Git te permite saltar esta parte con la opción -a. Esto le dice a Git, que ejec
  git reset HEAD nombreArchivo con eso puedes hacer que el add que hiciste no se haga
 el git add en cualquier archivo que ya esta en “seguimiento” - es decir, cualquier
 
- git rm nombreArchivo para que se elimine del repositorio
-archivo que se encontraba en tu último commit y después fue modificado.
- git reset --soft HEAD-1 ellimina el ultimo commit 
-
+git checkout HEAD filename: Discards changes in the working directory.
+git reset commit_SHA con git log puedes ver los 7 primeros codigos para regresar todo a un commit anterior
+checkout cambios  en el directorio de trabajo y reset Head cambio sen aresa tesas
+ git rm nombreArchivo para que se elimine del repositorio archivo que se encontraba en tu último commit 
+y después fue modificado.
+git reset HEAD filename: Unstages file changes in the staging area.
+ git reset --soft HEAD-1 ellimina el ultimo commit
+git reset commit_SHA: Resets to a previous commit in your commit history.
  git push para subir a a github
